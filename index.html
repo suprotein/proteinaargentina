@@ -2,67 +2,95 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Suprotein – Proteína aislada al 80%, sin azúcar, sin sodio, libre de gluten. ¡Potencia tu entrenamiento con la mejor calidad!">
   <title>Suprotein – Proteína Aislada 80%</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
       background: #f8f8f8;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #ffffff;
-      padding: 20px;
+      background: #fff;
+      padding: 15px;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     header img {
       width: 120px;
-      border-radius: 50%;
+      max-width: 100%;
     }
     .hero {
       text-align: center;
-      padding: 40px 20px;
-      background: #e6f0ff;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #e6f0ff, #ffffff);
     }
     .hero h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      color: #1a73e8;
     }
     .hero p {
       font-size: 1.1em;
       margin: 10px 0;
     }
     .price {
-      font-size: 1.4em;
+      font-size: 1.6em;
       font-weight: bold;
       color: #1a73e8;
     }
     .promo {
-      color: green;
+      color: #28a745;
+      font-weight: 600;
       margin-top: 5px;
     }
     .btn {
       display: inline-block;
       margin: 20px 10px 0;
-      padding: 15px 25px;
-      font-size: 1em;
+      padding: 14px 28px;
+      font-size: 1.1em;
       background-color: #1a73e8;
-      color: white;
+      color: #fff;
       text-decoration: none;
       border-radius: 8px;
-      transition: background 0.3s;
+      transition: all 0.3s ease;
     }
     .btn:hover {
       background-color: #0d47a1;
+      transform: scale(1.05);
+    }
+    .product-img {
+      max-width: 350px;
+      width: 90%;
+      border-radius: 15px;
+      margin: 30px auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .section {
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
+      background: #fff;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
     .section h2 {
-      font-size: 1.6em;
-      margin-bottom: 10px;
+      font-size: 1.8em;
+      color: #1a73e8;
+      margin-bottom: 15px;
     }
     .benefits ul {
       list-style: none;
@@ -72,12 +100,8 @@
       margin: 10px 0;
       font-size: 1.1em;
     }
-    .flavors {
-      font-weight: bold;
-      margin-top: 10px;
-    }
     .contact {
-      padding: 20px;
+      padding: 30px;
       background: #f0f0f0;
       text-align: center;
     }
@@ -85,18 +109,15 @@
       margin: 0 10px;
       text-decoration: none;
       color: #1a73e8;
-      font-size: 1.1em;
+      font-weight: 600;
+      font-size: 1.2em;
     }
-    .product-img {
-      max-width: 300px;
-      width: 100%;
-      border-radius: 10px;
-      margin: 20px auto;
-      display: block;
-    }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .hero h1 {
-        font-size: 1.6em;
+        font-size: 1.8em;
+      }
+      .section h2 {
+        font-size: 1.5em;
       }
     }
   </style>
@@ -116,7 +137,7 @@
   <a class="btn" href="https://wa.me/5492236682029?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Suprotein%20y%20quiero%20comprar%20prote%C3%ADna.%20%C2%BFPod%C3%A9s%20contarme%20m%C3%A1s%3F" target="_blank">Comprar por WhatsApp</a>
 </section>
 
-<img src="https://images.unsplash.com/photo-1600185365894-cb262f46f81e?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Proteína en polvo" class="product-img">
+<img src="https://images.unsplash.com/photo-1600185365894-cb262f46f81e?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Proteína en polvo Suprotein" class="product-img">
 
 <section class="section benefits">
   <h2>Beneficios de Suprotein</h2>
