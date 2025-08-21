@@ -21,34 +21,62 @@
       color: #333;
       line-height: 1.6;
     }
+    /* HEADER FIJO */
     header {
+      position: fixed;
+      top: 0;
+      width: 100%;
       background: #fff;
-      padding: 15px;
+      padding: 10px 0;
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
     }
     header img {
-      width: 120px;
+      width: 140px;
       max-width: 100%;
     }
+    /* SECCIÓN HERO */
     .hero {
       text-align: center;
-      padding: 50px 20px;
+      padding: 120px 20px 50px;
       background: linear-gradient(135deg, #e6f0ff, #ffffff);
+      position: relative;
+      overflow: hidden;
+    }
+    /* Marca de agua en hero */
+    .hero::before {
+      content: "";
+      background: url('https://tuservidor.com/logo-suprotein.png') no-repeat center;
+      background-size: 300px;
+      opacity: 0.05;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      transform: translate(-50%, -50%);
+      z-index: 0;
     }
     .hero h1 {
-      font-size: 2.2em;
+      font-size: 2.5em;
       margin-bottom: 15px;
       color: #1a73e8;
+      position: relative;
+      z-index: 1;
     }
     .hero p {
       font-size: 1.1em;
       margin: 10px 0;
+      position: relative;
+      z-index: 1;
     }
     .price {
-      font-size: 1.6em;
-      font-weight: bold;
+      font-size: 2.5em; /* aumentado */
+      font-weight: 700;
       color: #1a73e8;
+      margin: 15px 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
     }
     .promo {
       color: #28a745;
@@ -65,19 +93,23 @@
       text-decoration: none;
       border-radius: 8px;
       transition: all 0.3s ease;
+      position: relative;
+      z-index: 1;
     }
     .btn:hover {
       background-color: #0d47a1;
       transform: scale(1.05);
     }
+    /* IMAGEN DEL PRODUCTO */
     .product-img {
-      max-width: 350px;
-      width: 90%;
+      max-width: 500px; /* aumentado */
+      width: 95%;
       border-radius: 15px;
-      margin: 30px auto;
+      margin: 40px auto;
       display: block;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
+    /* SECCIONES */
     .section {
       padding: 40px 20px;
       text-align: center;
@@ -125,7 +157,7 @@
 <body>
 
 <header>
-  <img src="logo.jpg" alt="Logo Suprotein">
+  <img src="https://tuservidor.com/logo-suprotein.png" alt="Logo Suprotein">
 </header>
 
 <section class="hero">
@@ -137,7 +169,7 @@
   <a class="btn" href="https://wa.me/5492236682029?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Suprotein%20y%20quiero%20comprar%20prote%C3%ADna.%20%C2%BFPod%C3%A9s%20contarme%20m%C3%A1s%3F" target="_blank">Comprar por WhatsApp</a>
 </section>
 
-<img src="https://images.unsplash.com/photo-1600185365894-cb262f46f81e?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Proteína en polvo Suprotein" class="product-img">
+<img src="https://images.unsplash.com/photo-1600185365894-cb262f46f81e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Proteína en polvo Suprotein" class="product-img">
 
 <section class="section benefits">
   <h2>Beneficios de Suprotein</h2>
